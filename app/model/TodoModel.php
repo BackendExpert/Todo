@@ -29,4 +29,12 @@
 
             return $result;
         }
+        
+        public function todo_update($id, $topic, $todo){
+            $sql = "UPDATE todo_tbl SET topic = ?, todo = ? WHERE id = ?";
+            $sql_exc = $this->connect()->prepare($sql);
+            $result = $sql_exc->execute([$id, $topic, $todo]);
+
+            return $result;
+        }
     }

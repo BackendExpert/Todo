@@ -19,9 +19,13 @@
         width: 100%;
         height: 110px;
     }
+    .bck-btn{
+        margin: 30px 0;
+    }
 </style>
 
 <div class="container">
+    <a href="todo/"><button class="btn btn-primary bck-btn">Back</button></a>
     <div class="card">
         <div class="card-header">
             Update Todo
