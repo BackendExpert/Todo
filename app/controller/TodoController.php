@@ -6,7 +6,7 @@
             return $this->all_todos();
         }
 
-        public function add_todo($todo, $todo_data){
+        public function add_todo(){
             return $this->todo_add($todo, $todo_data);
         }
     }

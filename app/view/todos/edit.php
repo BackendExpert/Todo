@@ -9,8 +9,8 @@
             Update Todo
         </div>
         <div class="card-body">
-            <form action="" method="POST">
-                
+            <form action="../../" method="POST">
+
             </form>
         </div>
     </div>
