@@ -27,6 +27,17 @@
             Update Todo
         </div>
         <div class="card-body">
+
+            <?php 
+                if(isset($_POST['update_todo'])){
+                    $id = $_GET['id'];
+                    $topic = $_POST['update_topic'];
+                    $todo = $_POST['update_todo'];
+                    
+                }
+            
+            ?>
+
             <form action="" method="POST">
                 <label for="Topic">Topic : </label>
                 <input type="text" name="update_topic" value="<?= $todo['topic']?>" id="" class="form-control">
