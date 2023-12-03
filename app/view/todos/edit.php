@@ -32,8 +32,10 @@
                 <input type="text" name="update_topic" value="<?= $todo['topic']?>" id="" class="form-control">
                 <br>
                 <label for="todo">Todo : </label>
-                <textarea name="update_todo" class="form-control areatext"></textarea>
+                <textarea name="update_todo" class="form-control areatext"><?= $todo['todo']; ?></textarea>
             
+                <input type="submit" value="Update Todo" name="update_todo" class="btn btn-success">
+
             </form>
         </div>
     </div>
