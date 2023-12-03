@@ -33,6 +33,9 @@
     </div>
 
     <hr>
+
+    <h2 class="text-center">All Todos</h2>
+
     <ol class="list-group list-group">
     <?php 
         $todos = new TodoController();
