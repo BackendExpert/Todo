@@ -60,7 +60,7 @@
             <?= $todo['todo']; ?>
             </div>
             <a href="edit.php?id=<?= $todo['id']; ?>"><button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</button></a> &nbsp;
-            <a href=""><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button></a>
+            <form action="" method="POST"><input type="hidden" name="delete_id" value="<?= $todo['id']; ?>"><button type="submit" name="delete_todo" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete </button></form>
             &nbsp;<span class="badge bg-primary rounded-pill"><?= $todo['add_date']; ?></span>
         </li>
               

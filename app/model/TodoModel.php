@@ -35,6 +35,8 @@
             $sql_exc = $this->connect()->prepare($sql);
             $result = $sql_exc->execute([$topic, $todo, $id]);
 
+            header("location:index.php");
             return $result;
+            
         }
     }
