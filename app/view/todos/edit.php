@@ -25,7 +25,7 @@
 </style>
 
 <div class="container">
-    <a href="todo/"><button class="btn btn-primary bck-btn">Back</button></a>
+    <a href="index.php"><button class="btn btn-primary bck-btn">Back</button></a>
     <div class="card">
         <div class="card-header">
             Update Todo
@@ -33,7 +33,7 @@
         <div class="card-body">
 
             <?php 
-                if(isset($_POST['update_todo'])){
+                if(isset($_POST['todo_update'])){
                     $id = $_GET['id'];
                     $topic = $_POST['update_topic'];
                     $todo = $_POST['update_todo'];
@@ -52,7 +52,7 @@
                 <label for="todo">Todo : </label>
                 <textarea name="update_todo" class="form-control areatext"><?= $todo['todo']; ?></textarea>
                 <br>
-                <input type="submit" value="Update Todo" name="update_todo" class="btn btn-success">
+                <input type="submit" value="Update Todo" name="todo_update" class="btn btn-success">
 
             </form>
         </div>
