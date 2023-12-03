@@ -32,10 +32,10 @@
 
             <form action="" method="POST">
                 <label for="topic">Topic : </label>
-                <input type="text" name="topic" id="" class="form-control"><br>
+                <input type="text" name="topic" id="" class="form-control" required><br>
 
                 <label for="todo">Todo : </label>
-                <textarea name="todo" id="" class="form-control areatext"></textarea><br>
+                <textarea name="todo" id="" class="form-control areatext" required></textarea><br>
 
                 <input type="submit" value="Add Todo" name="add_todo" class="btn btn-success">
             </form>
