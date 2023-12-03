@@ -59,7 +59,7 @@
             <div class="fw-bold"><?= $todo['topic']; ?></div>
             <?= $todo['todo']; ?>
             </div>
-            <a href=""><button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</button></a> &nbsp;
+            <a href="edit.php?id=<?= $todo['id']; ?>"><button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</button></a> &nbsp;
             <a href=""><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Delete</button></a>
             &nbsp;<span class="badge bg-primary rounded-pill"><?= $todo['add_date']; ?></span>
         </li>
