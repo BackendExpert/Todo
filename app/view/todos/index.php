@@ -3,36 +3,32 @@
     include_once("../../controller/TodoController.php");
 ?>
 
-<style>
-    .list-group{
-        margin: 30px 0;
-    }
 
-</style>
 
 <div class="container">
 
     <hr>
-    <div class="list-group">
+    <ol class="list-group list-group">
     <?php 
         $todos = new TodoController();
         $all_todos = $todos->view_todos();
 
         foreach ($all_todos as $todo){
         ?>
-        <div class="list-group-item list-group-item-action" aria-current="true">
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1"><?= $todo['topic']; ?></h5>
-            <a href=""><button class="btn btn-warning"><i class="fas fa-edit"></i> Edit</button></a>
-            <a href=""><button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete</button></a>
-            <small>3 days ago</small>
-        </div>
-        <p class="mb-1"><?= $todo['todo']; ?></p>
-        </div>
-        
+
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+            <div class="fw-bold"><?= $todo['topic']; ?></div>
+            <?= $todo['todo']; ?>
+            </div>
+            <a href=""><button class="btn btn-warning btn-sm"><i class="fas fa-edit"></i>Edit</button></a> &nbsp;
+            <a href=""><button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i>Delete</button></a>
+            &nbsp;<span class="badge bg-primary rounded-pill"><?= $todo['add_date']; ?></span>
+        </li>
+              
         
         <?php
         }
     ?>
-    </div>
+    </ol>  
 </div>
