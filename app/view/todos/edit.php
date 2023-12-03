@@ -35,7 +35,7 @@
                     $todo = $_POST['update_todo'];
 
                     $update_todo = new TodoController();
-                    $update_todo->
+                    $update_todo->update_todo($id, $topic, $todo);
 
                 }
             
