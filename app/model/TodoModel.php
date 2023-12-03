@@ -39,4 +39,12 @@
             return $result;
             
         }
+
+        public function todo_delete($id){
+            $sql = "DELETE FROM todo_tbl WHERE id = ?";
+            $sql_exc = $this->connect()->prepare($sql);
+            $result = $sql_exc->execute([$id]);
+
+            return $result;
+        }
     }
