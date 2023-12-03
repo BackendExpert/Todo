@@ -33,7 +33,10 @@
                     $id = $_GET['id'];
                     $topic = $_POST['update_topic'];
                     $todo = $_POST['update_todo'];
-                    
+
+                    $update_todo = new TodoController();
+                    $update_todo->
+
                 }
             
             ?>
@@ -44,7 +47,7 @@
                 <br>
                 <label for="todo">Todo : </label>
                 <textarea name="update_todo" class="form-control areatext"><?= $todo['todo']; ?></textarea>
-            
+                <br>
                 <input type="submit" value="Update Todo" name="update_todo" class="btn btn-success">
 
             </form>

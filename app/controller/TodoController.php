@@ -13,5 +13,9 @@
         public function edit_todo($id){
             return $this->todo_edit($id);
         }
+
+        public function update_todo($id, $topic, $todo){
+            
+        }
     }
 ?>
