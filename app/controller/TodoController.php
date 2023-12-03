@@ -11,7 +11,7 @@
         }
 
         public function edit_todo($id){
-            
+            return $this->todo_edit($id);
         }
     }
 ?>

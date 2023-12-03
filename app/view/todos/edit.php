@@ -8,6 +8,12 @@
     $todo = $todos->edit_todo($_GET['id']);
 ?>
 
+<style>
+    .card{
+        margin: 20px 0;
+    }
+</style>
+
 <div class="container">
     <div class="card">
         <div class="card-header">
