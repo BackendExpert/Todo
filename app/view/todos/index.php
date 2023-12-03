@@ -20,6 +20,16 @@
     <div class="card">
         <div class="card-header">Add Todo</div>
         <div class="card-body">
+            <?php 
+                if(isset($_POST['add_todo'])){
+                    $topic = $_POST['topic'];
+                    $todo_data = $_POST['todo'];
+                    
+                    $add_todo = new TodoController();
+                    $add_todo->add_todo($topic, $todo_data);
+                }
+            ?>
+
             <form action="" method="POST">
                 <label for="topic">Topic : </label>
                 <input type="text" name="topic" id="" class="form-control"><br>
