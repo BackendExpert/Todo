@@ -45,6 +45,15 @@
     <hr>
 
     <h2 class="text-center">All Todos</h2>
+        
+    <?php 
+        if(isset($_POST['delete_todo'])){
+            $id = $_POST['delete_id'];
+
+            $delete_todo = new TodoController();
+            $delete_todo->delete_todo($id);
+        }
+    ?>
 
     <ol class="list-group list-group">
     <?php 
