@@ -13,7 +13,7 @@
         ?>
         <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1"><?= $todo['topic']; ?></h5>
-            <small>3 days ago</small>
+            <small><?= $todo['add_date']; ?></small>
         </div>
         <p class="mb-1"><?= $todo['todo']; ?></p>
         
