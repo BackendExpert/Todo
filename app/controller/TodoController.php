@@ -16,6 +16,7 @@
 
         public function update_todo($id, $topic, $todo){
             return $this->todo_update($id, $topic, $todo);
+            header("location:index.php");
         }
     }
 ?>
