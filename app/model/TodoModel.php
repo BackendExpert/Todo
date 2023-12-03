@@ -21,7 +21,7 @@
             return $result;
         }
 
-        public function edit_todo($id){
+        public function todo_edit($id){
             $sql = "SELECT * FROM todo_tbl WHERE id = ?";
             $sql_exc = $this->connect()->prepare($sql);
             $sql_exc->execute([$id]);
