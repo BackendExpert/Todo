@@ -8,7 +8,8 @@
             $is_done = 0;
 
             $sql = "INSERT INTO todo_tbl(topic, todo, is_done, add_date)VALUE(?, ?, ?, ?)";
-            
+            $sql_exc = $this->connect()->prepare($sql);
+            return $sql_exc->execute($todo, $todo_data, $is_done, $date);
 
         }
 
