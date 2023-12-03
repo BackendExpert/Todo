@@ -6,10 +6,13 @@
 <div class="container">
     <?php 
         $todos = new TodoController();
-        $all_todos = $this->view_todos();
+        $all_todos = $todos->view_todos();
 
         foreach ($all_todos as $todo){
-            echo $todo['topic'];
+        ?>
+            
+        
+        <?php
         }
     ?>
 </div>

@@ -1,6 +1,6 @@
 <?php 
 
-    include("../config/database.php");
+    include("../../config/database.php");
 
     class TodoModel extends db {
         public function all_todos(){
